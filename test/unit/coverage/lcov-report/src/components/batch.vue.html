@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\components\batch.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/components/</a> batch.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/4</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div class="w-batch"&gt;
+  	&lt;h3&gt;批量订单列表&lt;/h3&gt;
+  	&lt;div class="step"&gt;
+  		&lt;h4&gt;操作步骤：&lt;/h4&gt;
+  		&lt;p&gt;&lt;span&gt;1&lt;/span&gt;点击&lt;a&gt;下载最新商品列表&lt;/a&gt;，获取最新的商品清单；&lt;/p&gt;
+  		&lt;p&gt;&lt;a href="http://b2bapi.anchumall.cc/download/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8.xlsx"&gt;&lt;button&gt;点击下载&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;
+  		&lt;p&gt;&lt;span&gt;2&lt;/span&gt;点击&lt;a&gt;下载订单导入模板&lt;/a&gt;，获取导入模板，根据模板格式填入订单信息；&lt;/p&gt;
+  		&lt;p&gt;&lt;a href="http://b2bapi.anchumall.cc/download/%E8%AE%A2%E5%8D%95%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx"&gt;&lt;button&gt;点击下载&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;
+  		&lt;p&gt;&lt;span&gt;3&lt;/span&gt;上传订单导入模板，上传后如有失败条目，可下载失败文件并重新上传；&lt;/p&gt;
+  		&lt;p&gt;上传成功后，可在“个人中心-交易管理-批量订单列表”查看导入成功的订单，并且进行付款操作。&lt;/p&gt;
+  		&lt;form id="form" method="post" action="/api.php?s=api/orderimport/import_orders"&gt;
+  			&lt;input type="file" style="display:none" id="loadfile" v-on:change="watchsubmit" /&gt;&lt;input type="button" @click="uploadFile" value="上传文件" class="submit"	/&gt;
+  		&lt;/form&gt;
+  		&lt;p&gt;成功：&lt;i&gt;0&lt;/i&gt;失败：&lt;i&gt;0&lt;/i&gt;&lt;/p&gt;
+  		&lt;p v-if="errors==1"&gt;&lt;a href="#"&gt;下载导入失败商品&lt;/a&gt;&lt;/p&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+export default {
+  name: 'batch',
+  data () {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      msg: '',
+      errors:0
+    }
+  },
+  methods:{
+  	//上传文件功能
+  	uploadFile(){
+<span class="cstat-no" title="statement not covered" >  		$("#loadfile").click();</span>
+  	},
+  	//表单提交监听事件
+  	watchsubmit(){
+<span class="cstat-no" title="statement not covered" >			if($("#loadfile").val() != ""){</span>
+<span class="cstat-no" title="statement not covered" >  			$("#form").submit();</span>
+			}
+  	}
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+	.w-batch{
+		width:972px;
+		float: left;
+		padding:16px 25px 130px 22px;
+		background-color:#fff;
+		min-height: 500px;
+	}
+	.w-batch button{
+		cursor:pointer;
+		font-size:14px;
+	}
+	.w-batch h3{
+		color:#333;
+		text-align: left;
+		padding-bottom:15px;
+		border-bottom: 1px solid #D8D8D8;
+		margin-bottom: 22px;
+	}
+	.w-batch h4,.w-batch p{
+		text-align: left;
+		font-size:14px;
+		color:#333;
+	}
+	.w-batch h4{
+		margin-bottom:26px;
+	}
+	.w-batch p span{
+		display: inline-block;
+		width:19px;
+		height:19px;
+		color:#fff;
+		border-radius:4px;
+		background-color: #009E4D;
+		text-align: center;
+		font-size:14px;
+		line-height:19px;
+		margin:0 15px;
+	}
+	.w-batch p a{
+		color:#E64346;
+	}
+	.w-batch p button{
+		width:78px;
+		height:28px;
+		border:1px solid #D8D8D8;
+		background-color: #F2F2F2;
+		margin-left:48px;
+	}
+	.w-batch .step p:nth-of-type(2),.w-batch .step p:nth-of-type(4){
+		margin:12px 0 24px;
+	}
+	.w-batch .step p:nth-of-type(6){
+		margin:44px 0 16px;
+		box-sizing: border-box;
+		padding-left:15px;
+		color:#999;
+	}
+	.w-batch form .submit{
+		width:120px;
+		height:50px;
+		color:#fff;
+		margin-left:15px;
+		background-color:#009E4D;
+	}
+	.w-batch .step p:nth-of-type(7){
+		color:#E64346;
+		margin-top:14px;
+		box-sizing: border-box;
+		padding-left: 15px;
+	}
+	.w-batch .step p:nth-of-type(7) i{
+		color:#E64346;
+		margin-right: 20px;
+	}
+	.w-batch .step p:last-of-type{
+		color:#E64346;
+		margin-top:14px;
+		box-sizing: border-box;
+		padding-left: 15px;
+	}
+	.w-batch .step p:last-of-type a{
+		color:#E64346;
+		margin-right: 20px;
+		text-decoration:underline;
+	}
+&lt;/style&gt;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 20 2017 11:07:05 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

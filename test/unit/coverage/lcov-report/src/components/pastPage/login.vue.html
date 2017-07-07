@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\components\pastPage\login.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/components/pastPage/</a> login.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/79</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/79</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div class="login"&gt;
+    &lt;login-header&gt;欢迎登录&lt;/login-header&gt;
+    &lt;div class="content" style="background: url(/static/images/login_bg.png) 100% 100%;"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;安厨供应链登录&lt;/li&gt;
+            &lt;li class="hint"&gt;&lt;/li&gt;
+            &lt;li&gt;
+               &lt;div&gt;
+                  &lt;span class="iconfont icon-shouji"&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;input type="tel" name="" class="login-phone" :maxlength="maxlength" placeholder="请输入手机号码" @input="verifyFirst($event)" v-on:keyup.13='loginSubmit' onkeyup="value=value.replace(/[^\d]/g,'')"/&gt;
+              &lt;span class="iconfont icon-iconfontshanchu pointer" v-on:click='iconfontshanchu($event)' style="display: none;color:#999"&gt;&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+           &lt;div&gt;
+              &lt;span class="iconfont icon-p-password"&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;input type="password" name="" class="login-password" placeholder="请输入密码" maxlength="16" v-on:keyup.13='loginSubmit'/&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+       &lt;p style="color:#999"&gt;建议使用数字、字母、符号两种及以上的组合，6-16个字符&lt;/p&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+       &lt;input type="button" name="" class="login-submit" value="登录" v-on:click='loginSubmit' /&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+       &lt;router-link to="/findBackPsd"&gt;忘记密码？&lt;/router-link&gt;
+       &lt;router-link class="btn-register" to="/register"&gt;立即注册&lt;/router-link&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;index-footer&gt;&lt;/index-footer&gt;
+&lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+    import loginHeader from "@/components/common/login_header"
+    import IndexFooter from "@/components/common/index_footer"
+    export default {
+      name: 'login',
+      data () {
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          maxlength:11
+      }
+  },
+  components:{
+    loginHeader,IndexFooter
+  },
+  beforeCreate(){
+    let userid  = <span class="cstat-no" title="statement not covered" >this.$cookie.getCookie('a34ea2d96d4239d4d86803bb3cd99788');</span>
+<span class="cstat-no" title="statement not covered" >    if(userid){</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push('/');</span>
+    }
+  },
+  mounted(){
+    // this.islogin();
+  },
+  methods:{
+    islogin() {
+        let _this = <span class="cstat-no" title="statement not covered" >this;</span>
+<span class="cstat-no" title="statement not covered" >        $.ajax({</span>
+            url: this.$store.state.apilink+"?s=api/User/is_login",
+            dataType: "json",
+            type: 'get',
+            success: function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >                if (res.code == '2'){</span>
+<span class="cstat-no" title="statement not covered" >                    sessionStorage.loginstatus = true;</span>
+<span class="cstat-no" title="statement not covered" >                    sessionStorage.user_id = res.user_id;</span>
+										// console.log(this.$store.state.apilink+"?s=api/User/is_login")
+<span class="cstat-no" title="statement not covered" >                    $.ajax({</span>
+                        url: _this.$store.state.apilink+"?s=api/user/getUserInfo",
+                        data:{user_id:sessionStorage.user_id},
+                        dataType: "json",
+                        type: 'get',
+                        success: function (res) <span class="fstat-no" title="function not covered" >{</span>
+                          // console.log(res)
+<span class="cstat-no" title="statement not covered" >                            sessionStorage.username = res.result.mobile;</span>
+<span class="cstat-no" title="statement not covered" >                            _this.isverify();</span>
+                        }
+                    });
+                            //开发后期开启，否则开发中账户无法使用，必须等认证通过才能使用
+                        }else{
+                            // 删除userId
+<span class="cstat-no" title="statement not covered" >                            _this.$cookie.delCookie('a34ea2d96d4239d4d86803bb3cd99788');</span>
+                            // 删除电话号码
+<span class="cstat-no" title="statement not covered" >                            _this.$cookie.delCookie('8e3c824e1d6254b74a013799c1565538');</span>
+                            // 删除认证状态
+<span class="cstat-no" title="statement not covered" >                            _this.$cookie.delCookie('b61a9d162ac1dfaa22d0f05bdc7f6299');</span>
+<span class="cstat-no" title="statement not covered" >                            _this.$cookie.delCookie('PHPSESSID')</span>
+                        }
+                    },
+                    error:function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >                        _this.$message('未知错误！');</span>
+                    }
+                });
+    },
+    isverify(){
+        let _this = <span class="cstat-no" title="statement not covered" >this;</span>
+<span class="cstat-no" title="statement not covered" >        if (sessionStorage.user_id == undefined) {</span>
+<span class="cstat-no" title="statement not covered" >          _this.$router.push({path:'/login'});</span>
+<span class="cstat-no" title="statement not covered" >          return;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        $.ajax({</span>
+          url: _this.$store.state.apilink+"?s=api/User/user_is_verify",
+          data: {user_id: sessionStorage.user_id},
+          type: 'post',
+          dataType:"json",
+          success: function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            if((res.code == '-2') || (res.code == '-4')){</span>
+<span class="cstat-no" title="statement not covered" >              _this.$router.push({path:'/proof'});</span>
+            }else <span class="cstat-no" title="statement not covered" >if(res.code == '-1'){</span>
+<span class="cstat-no" title="statement not covered" >              _this.$message(res.msg);</span>
+<span class="cstat-no" title="statement not covered" >              _this.$router.push({path:'/verify'});</span>
+            }else <span class="cstat-no" title="statement not covered" >if(res.code == '1'){</span>
+<span class="cstat-no" title="statement not covered" >              _this.$router.push({path:'/'});</span>
+            }else{
+<span class="cstat-no" title="statement not covered" >              return</span>
+            }
+          },
+          error:function (errorres) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            _this.$message(errorres.msg);</span>
+          }
+        });
+      },
+verifyFirst(e){
+    let hintspan = <span class="cstat-no" title="statement not covered" >'&lt;span class="iconfont icon-warning" style="color:#FF5858;margin: 0 5px"&gt;&lt;/span&gt;';</span>
+<span class="cstat-no" title="statement not covered" >    if (e.srcElement.value.substring(0,1) == 1) {</span>
+<span class="cstat-no" title="statement not covered" >        this.maxlength = '11';</span>
+<span class="cstat-no" title="statement not covered" >        $('.hint').html('');</span>
+<span class="cstat-no" title="statement not covered" >        $('.icon-iconfontshanchu').show()</span>
+    }else <span class="cstat-no" title="statement not covered" >if(e.srcElement.value.length &gt;= 1){</span>
+<span class="cstat-no" title="statement not covered" >        this.maxlength = '1';</span>
+<span class="cstat-no" title="statement not covered" >        $('.hint').html(hintspan+'首位不为1');</span>
+<span class="cstat-no" title="statement not covered" >        $('.icon-iconfontshanchu').show()</span>
+    }else{
+<span class="cstat-no" title="statement not covered" >        $('.icon-iconfontshanchu').hide()</span>
+    }
+},
+loginSubmitCheck() {
+    let loginPhone = <span class="cstat-no" title="statement not covered" >$(".login-phone").val();</span>
+    let loginPassword = <span class="cstat-no" title="statement not covered" >$(".login-password").val();</span>
+<span class="cstat-no" title="statement not covered" >    loginPhone = loginPhone.replace(/(^\s+)|(\s+$)/g,"");</span>
+<span class="cstat-no" title="statement not covered" >    loginPassword = loginPassword.replace(/(^\s+)|(\s+$)/g,"")</span>
+    let hintspan = <span class="cstat-no" title="statement not covered" >'&lt;span class="iconfont icon-warning" style="color:#FF5858;margin: 0 5px"&gt;&lt;/span&gt;';</span>
+<span class="cstat-no" title="statement not covered" >    if (loginPhone == '') {</span>
+<span class="cstat-no" title="statement not covered" >        $('.hint').html(hintspan+'请填写手机号码');</span>
+<span class="cstat-no" title="statement not covered" >        return false;</span>
+    }else <span class="cstat-no" title="statement not covered" >if(loginPassword == '') {</span>
+<span class="cstat-no" title="statement not covered" >        $('.hint').html(hintspan+'请填写密码');</span>
+<span class="cstat-no" title="statement not covered" >        return false;</span>
+    }else <span class="cstat-no" title="statement not covered" >if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)(?!([^(0-9a-zA-Z)]|[\(\)])+$)([^(0-9a-zA-Z)]|[\(\)]|[a-zA-Z]|[0-9]).{5,17}$/).test(loginPassword)) {</span>
+<span class="cstat-no" title="statement not covered" >        $('.hint').html(hintspan+'密码格式不正确');</span>
+<span class="cstat-no" title="statement not covered" >        return false;</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >        return true;</span>
+    }
+},
+loginSubmit(){
+&nbsp;
+    // 删除userId
+<span class="cstat-no" title="statement not covered" >    this.$cookie.delCookie('a34ea2d96d4239d4d86803bb3cd99788');</span>
+    // 删除电话号码
+<span class="cstat-no" title="statement not covered" >    this.$cookie.delCookie('8e3c824e1d6254b74a013799c1565538');</span>
+    // 删除认证状态
+<span class="cstat-no" title="statement not covered" >    this.$cookie.delCookie('b61a9d162ac1dfaa22d0f05bdc7f6299');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.$cookie.delCookie('PHPSESSID');</span>
+&nbsp;
+&nbsp;
+&nbsp;
+   let _this = <span class="cstat-no" title="statement not covered" >this;</span>
+<span class="cstat-no" title="statement not covered" >   $.ajax({</span>
+    url: _this.$store.state.apilink+"?s=api/User/do_login",
+    data: {
+      username:$(".login-phone").val(),
+      password:$(".login-password").val()
+    },
+    dataType: "json",
+    type: 'post',
+    beforeSend: function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >        if(!_this.loginSubmitCheck()){</span>
+<span class="cstat-no" title="statement not covered" >           return false;</span>
+       }
+   },
+   success: function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    if (res.status == 200){</span>
+&nbsp;
+        // 设置  cookie 默认1天
+<span class="cstat-no" title="statement not covered" >       _this.$cookie.setCookie('a34ea2d96d4239d4d86803bb3cd99788',res.user_id,'d1');</span>
+<span class="cstat-no" title="statement not covered" >       _this.$cookie.setCookie('8e3c824e1d6254b74a013799c1565538',$(".login-phone").val(),'d1');</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $.ajax({</span>
+            url:_this.$store.state.apilink+'?s=api/User/user_is_verify',
+            data:{
+              user_id:_this.$cookie.getCookie('a34ea2d96d4239d4d86803bb3cd99788')
+            },
+            dataType: "json",
+            type: 'post',
+            success: function (res) <span class="fstat-no" title="function not covered" >{</span>
+              // console.log(res)
+<span class="cstat-no" title="statement not covered" >                _this.$cookie.setCookie('b61a9d162ac1dfaa22d0f05bdc7f6299',res.code,'d1');</span>
+<span class="cstat-no" title="statement not covered" >                if(res.code == 1){</span>
+<span class="cstat-no" title="statement not covered" >                    _this.$router.push({path:'/'});</span>
+                }else <span class="cstat-no" title="statement not covered" >if(res.code== -1){</span>
+<span class="cstat-no" title="statement not covered" >                    _this.$router.push({path:'/verify'});</span>
+                }else{
+<span class="cstat-no" title="statement not covered" >                    _this.$router.push({path:'/proof'});</span>
+                }
+            },
+            error:function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >              _this.$message('系统繁忙，请稍候~');</span>
+            }
+        });
+&nbsp;
+    }else{
+<span class="cstat-no" title="statement not covered" >        _this.$message(res.msg);</span>
+    }
+},
+error:function (res) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    _this.$message('系统繁忙，请稍候~');</span>
+}
+});
+},
+iconfontshanchu(e){
+<span class="cstat-no" title="statement not covered" >   $(e.currentTarget).prev('input').val('');</span>
+<span class="cstat-no" title="statement not covered" >   $('.icon-iconfontshanchu').hide()</span>
+}
+}
+}
+&nbsp;
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+&nbsp;
+    .login{width:100%;height:100%}
+    .login .content{height:600px}
+    .login .content ul{width:350px;float:right;margin:100px 360px 0 0;padding:20px 40px;background:#fff}
+    .login .content ul li:nth-child(1){height:65px;line-height:65px;font-size:20px;border-bottom:2px solid #E2E2E2;text-align:center}
+    .login .content ul li:nth-child(2){height:30px;line-height:30px;font-size:14px;color:#FF1B1B;margin-top:1px;text-align: left;}
+    .login .content ul li:nth-child(3),.login .content ul li:nth-child(4){height:46px;line-height:46px;font-size:16px;margin-top:1px;border:1px solid #D8D8D8;border-radius:4px;display:flex;align-items:center;overflow:hidden}
+    .login .content ul li:nth-child(3) div,.login .content ul li:nth-child(4) div{background:#f2f2f2}
+    .login .content ul li:nth-child(3) input,.login .content ul li:nth-child(4) input{width:260px;height:100%;padding:0 16px}
+    .login .content ul li:nth-child(3) .iconfont,.login .content ul li:nth-child(4) .iconfont{height:100%;margin:0 17px}
+    .login .content ul li:nth-child(4){margin-top:20px}
+    .login .content ul li:nth-child(5){height:12px;line-height:12px;font-size:12px;margin-top:12px;text-align: left;}
+    .login .content ul li:nth-child(6){text-align:center;height:46px;line-height:46px;background:#009448;margin-top:20px;border-radius:4px}
+    .login .content ul li:nth-child(6) input{font-size:20px;color:#fff;width: 100%;height: 100%;}
+    .login .content ul li:nth-child(7){height:17px;line-height:17px;margin-top:20px;text-align: left;}
+    .login .btn-register{float:right;color:#009448!important}
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 20 2017 11:07:05 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
