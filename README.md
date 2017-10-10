@@ -2,6 +2,13 @@
 
 > A Vue.js project
 
+
+`2017/06/16 改版（2.0）工作开始`
+
+`2017/07/07 改版（2.0）工作完成`
+
+`卢超、任小圆`
+
 ## Build Setup
 
 ``` bash
@@ -28,9 +35,3 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-##############################
-2017/06/16 改版（2.0）工作开始
-2017/07/07 改版（2.0）工作完成
-卢超、任小圆
-##############################
